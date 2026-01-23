@@ -30,3 +30,7 @@ const fs = require('fs')
 //5) delete a file -->
 // fs.unlinkSync('one.html')
 
+
+
+// fs.writeFileSync('pages/trial.js','this is dummy text')
+//https://github.com/shubhamkumar123456/TG-303-A17.git
