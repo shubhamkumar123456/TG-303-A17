@@ -29,12 +29,14 @@ app.get('/products', (req,res)=>{
 })
 
 
+// Data send in body example -->
 app.post('/signup', (req,res)=>{
     console.log(req.body)
     res.json("all is good")
 })
 
 
+// Data send in params example
 app.get('/trial/:data',(req,res)=>{
     console.log(req.params)
     console.log(req.params.data)
