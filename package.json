@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shubhamkumar123456/TG-303-A17/issues"
   },
-  "homepage": "https://github.com/shubhamkumar123456/TG-303-A17#readme"
+  "homepage": "https://github.com/shubhamkumar123456/TG-303-A17#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
