@@ -28,6 +28,13 @@ app.get('/products', (req,res)=>{
     res.json({products:arr})
 })
 
+let arr1 = [
+    {name:"john", email:"john@gmail.com", details:{city:"kanpur", state:"UP"}},
+    {name:"xyz", email:"xyz@gmail.com", details:{city:"kanpur", state:"UP"}},
+    {name:"nick", email:"nick@gmail.com", details:{city:"lucknow", state:"UP"}},
+    {name:"jane", email:"jane@gmail.com", details:{city:"unnao", state:"UP"}},
+] 
+
 
 // Data send in body example -->
 app.post('/signup', (req,res)=>{
@@ -48,3 +55,6 @@ app.get('/trial/:data',(req,res)=>{
 app.listen(port , ()=>{
     console.log('server is running')
 })
+
+
+// https://github.com/shubhamkumar123456/TG-303-A17.git
