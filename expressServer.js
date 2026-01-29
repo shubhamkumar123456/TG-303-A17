@@ -20,10 +20,10 @@ app.get('/', (req, res) => {
 
 app.get('/products', (req,res)=>{
     let arr = [
-        {name:"iphone", price:45000, rating:5},
-        {name:"samsung", price:65000, rating:4},
-        {name:"Real Me", price:45000, rating:3},
-        {name:"Mi", price:25000, rating:2},
+        {name:"iphone", price:45000, rating:5, category:"smartphone"},
+        {name:"samsung", price:65000, rating:4,category:"smartphone"},
+        {name:"Real Me", price:45000, rating:3,category:"smartphone"},
+        {name:"Mi", price:25000, rating:2,category:"tablet"},
     ]
     res.json({products:arr})
 })

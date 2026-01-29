@@ -13,3 +13,17 @@
 //5) get data  -->
     // a)get all data inside a collection --> db.collectionName.find()
     // b) find single matched Data -->  db.collectionName.findOne({key : value}) 
+
+//6) Update Data -->
+    // single data update--> db.collectionName.updateOne({key:value} , {$set:{key:value}})
+    // single multiple update--> db.collectionName.updateMany({key:value} , {$set:{key:value}})
+
+//7) delete Data --> 
+// a) delete single data --> db.collectionName.deleteOne({key:value})
+// a) delete Multiple data --> db.collectionName.deleteMany({key:value})
+
+//8) delete a collection folder --> db.collectionName.drop()
+// 9) delete a database --> db.dropDatabase()
+
+
+
