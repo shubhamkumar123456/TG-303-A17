@@ -25,5 +25,9 @@
 //8) delete a collection folder --> db.collectionName.drop()
 // 9) delete a database --> db.dropDatabase()
 
+// other filter method --> $gt , $lt , $gte , $lte ,$et 
 
+// example --> db.collectionName.find({price:{$gt:100}}) 
+// example --> db.collectionName.find({rating:{$gt:3.5}}) 
+// example --> db.collectionName.find({price:{$gt:100}}) 
 
