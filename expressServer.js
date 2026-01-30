@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 8080;
-
+const main = require('./db/db.js');// mainFunction
 
 app.use(express.json())   //middleware 
 
@@ -37,10 +37,13 @@ let arr1 = [
 
 
 // Data send in body example -->
-app.post('/signup', (req,res)=>{
+app.post('/signup',async (req,res)=>{
     console.log(req.body)
-    res.json("all is good")
+    let collection = await main();
+    let data = await collection.insertOne(req.body)
+    res.json({msg:"user registered successfully"})
 })
+
 
 
 // Data send in params example
